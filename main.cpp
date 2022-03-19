@@ -26,7 +26,7 @@ int main(){
         cout << "3) SCISSORS " << endl;
         cin >> Player;
     
-        // User inputs
+        // User Inputs
     
         if(Player == 1){
         cout << "You Chose ROCK " << endl;
@@ -38,7 +38,7 @@ int main(){
         cout << "You Chose SCISSORS " << endl;
         }
     
-        // CPU Creates Moves!
+        // CPU Creates Moves
 
         cpu = rand()%3+1;
 
