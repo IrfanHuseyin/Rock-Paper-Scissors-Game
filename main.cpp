@@ -17,93 +17,93 @@ int main(){
         cout << "Rounds " << x << " Of 3 " << endl;
         x++;
 
-    srand(time(NULL));
+        srand(time(NULL));
 
-    int Player = 0, cpu = 0;
+        int Player = 0, cpu = 0;
         cout << "ROCK,PAPER,SCISSORS GAME " << endl;
         cout << "1) ROCK " << endl;
         cout << "2) PAPER " << endl;
         cout << "3) SCISSORS " << endl;
         cin >> Player;
     
-    // User inputs
+        // User inputs
     
-    if(Player == 1){
+        if(Player == 1){
         cout << "You Chose ROCK " << endl;
-    }
-    else if(Player == 2){
+        }
+        else if(Player == 2){
         cout << "You Chose PAPER " << endl;
-    }
-    else{
+        }
+        else{
         cout << "You Chose SCISSORS " << endl;
-    }
+        }
     
-    // CPU Creates Moves!
+        // CPU Creates Moves!
 
-    cpu = rand()%3+1;
+        cpu = rand()%3+1;
 
-    if(cpu == 1){
+        if(cpu == 1){
         cout << "CPU Chose ROCK " << endl;
-    }
-    else if(cpu == 2){
+        }
+        else if(cpu == 2){
         cout << "CPU Chose PAPER " << endl;
-    }
-    else{
+        }
+        else{
         cout << "CPU Chose SCISSORS " << endl;
-    }
+         }
 
-    //MATCH
+        // Match
 
-    if(Player == cpu){
+        if(Player == cpu){
         cout << "It's a Draw! " << endl;
         playerScore++, cpuScore++;
-    }
+        }
     
-    //user chooses rock
+        // User Chooses Rock
     
-    else if(Player == 1){
+        else if(Player == 1){
     
-    if(cpu == 2){
+        if(cpu == 2){
         cout << "You Lose! " << endl;
         cpuScore++;
-    }
-    if(cpu == 3){
+        }
+        if(cpu == 3){
         cout << "You Win! " << endl;
         playerScore++;
-    }
-    }
+        }   
+        }
     
-    //user chooses paper
+        // User Chooses Paper
 
-    else if(Player == 2){
+        else if(Player == 2){
 
-    if(cpu == 1){
+        if(cpu == 1){
         cout << "You Win! " << endl;
         playerScore++;
-    }
-    if(cpu == 3){
+        }
+        if(cpu == 3){
         cout << "You Lose! " << endl;
         cpuScore++;
-    }
-    }
+        }
+        }
     
-    //user chooses scissors
+        // User Chooses Scissors
     
-    else if(Player == 3){
+        else if(Player == 3){
 
-    if(cpu == 1){
+        if(cpu == 1){
         cout << "You Lose! " << endl;
         cpuScore++;
-    }
-    if(cpu == 2){
+        }
+        if(cpu == 2){
         cout << "You Win! " << endl;
         playerScore++;
-    }
-    }
+        }
+        }
    
-    }
+        }
     
-    //End Results
+        // End Results
 
     cout << "Player Score = " << playerScore << endl;
     cout << "CPU Score = " << cpuScore << endl;
